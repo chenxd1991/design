@@ -31,3 +31,8 @@ build/
 
 ### VS Code ###
 .vscode/
+/design.iml
+/HELP.md
+/mvnw
+/mvnw.cmd
+/.mvn/
