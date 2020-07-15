@@ -6,6 +6,10 @@ package com.chenxd.design.singleton;
  * @email xiaodong.chen@huixiaoer.com
  * @description
  */
+
+/**
+ * 单例模式适用于频繁创建或销毁对象时使用
+ */
 public class SingletonApp {
     public static void main(String[] args) {
         SingletonTest1 singletonTest1 = SingletonTest1.getInstance();
@@ -27,5 +31,13 @@ public class SingletonApp {
         SingletonTest5 singletonTest9 = SingletonTest5.getInstance();
         SingletonTest5 singletonTest10 = SingletonTest5.getInstance();
         System.out.println(singletonTest9 == singletonTest10);
+        System.out.println("==============================");
+        SingletonTest6 singletonTes11 = SingletonTest6.getInstance();
+        SingletonTest6 singletonTest12 = SingletonTest6.getInstance();
+        System.out.println(singletonTes11 == singletonTest12);
+        System.out.println("==============================");
+        Singleton singletonTes13 = Singleton.INSTANCE;
+        Singleton singletonTes14 = Singleton.INSTANCE;
+        System.out.println(singletonTes13 == singletonTes14);
     }
 }
